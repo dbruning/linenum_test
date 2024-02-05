@@ -21,11 +21,16 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
+    private void ThrowExceptionInner()
+    {
+        throw new NotImplementedException();
+    }
+
     private void ThrowException(object sender, RoutedEventArgs e)
     {
         try
         {
-            throw new NotImplementedException();
+            ThrowExceptionInner();
         }
         catch (Exception ex)
         {

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Babel Obfuscator MSBuild Project File
+	Version 10.5.0.0
+-->
+<Project DefaultTargets="WpfApp1" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="Babel" AssemblyName="Babel.Build, Version=10.5.0.0, Culture=neutral, PublicKeyToken=138d17b5bd621ab7" />
+  <Target Name="WpfApp1">
+    <PropertyGroup>
+      <BabelInputFile>WpfApp1\WpfApp1\bin\Release\net8.0-windows\win-x64\publish\WpfApp1.dll</BabelInputFile>
+      <CleanAttributes>false</CleanAttributes>
+      <ControlFlowObfuscation>goto=true;switch=true;case=true;if=false;call=false;value=false;token=false;underflow=false;true</ControlFlowObfuscation>
+      <CopyAttributes>true</CopyAttributes>
+      <DeadCodeElimination>false</DeadCodeElimination>
+      <DependenciesManifest>true</DependenciesManifest>
+      <DynamicProxy>None</DynamicProxy>
+      <EnableObfuscationAgent>true</EnableObfuscationAgent>
+      <FlattenNamespaces>true</FlattenNamespaces>
+      <GenerateDebug>true</GenerateDebug>
+      <ILIterations>3</ILIterations>
+      <MsilEncryption>false</MsilEncryption>
+      <ObfuscateEvents>true</ObfuscateEvents>
+      <ObfuscateFields>true</ObfuscateFields>
+      <ObfuscateMethods>true</ObfuscateMethods>
+      <ObfuscateParameters>true</ObfuscateParameters>
+      <ObfuscateProperties>true</ObfuscateProperties>
+      <ObfuscateTypes>true</ObfuscateTypes>
+      <ObfuscateXaml>false</ObfuscateXaml>
+      <OverloadedRenaming>false</OverloadedRenaming>
+      <ResourceEncryption>false</ResourceEncryption>
+      <SearchSatelliteAssemblies>true</SearchSatelliteAssemblies>
+      <ShowLogo>true</ShowLogo>
+      <ShowStatistics>true</ShowStatistics>
+      <StringEncryption>false</StringEncryption>
+      <SuppressReflection>false</SuppressReflection>
+      <UnicodeNormalization>false</UnicodeNormalization>
+      <ValueEncryption>false</ValueEncryption>
+      <VerboseLevel>1</VerboseLevel>
+      <VirtualFunctions>true</VirtualFunctions>
+    </PropertyGroup>
+    <Message Text="Obfuscating $(BabelInputFile)..." />
+    <Babel CleanAttributes="$(CleanAttributes)" ControlFlowObfuscation="$(ControlFlowObfuscation)" CopyAttributes="$(CopyAttributes)" DeadCodeElimination="$(DeadCodeElimination)" DependenciesManifest="$(DependenciesManifest)" DynamicProxy="$(DynamicProxy)" EnableObfuscationAgent="$(EnableObfuscationAgent)" FlattenNamespaces="$(FlattenNamespaces)" GenerateDebug="$(GenerateDebug)" ILIterations="$(ILIterations)" InputFile="$(BabelInputFile)" MsilEncryption="$(MsilEncryption)" ObfuscateEvents="$(ObfuscateEvents)" ObfuscateFields="$(ObfuscateFields)" ObfuscateMethods="$(ObfuscateMethods)" ObfuscateParameters="$(ObfuscateParameters)" ObfuscateProperties="$(ObfuscateProperties)" ObfuscateTypes="$(ObfuscateTypes)" ObfuscateXaml="$(ObfuscateXaml)" OverloadedRenaming="$(OverloadedRenaming)" ResourceEncryption="$(ResourceEncryption)" SearchSatelliteAssemblies="$(SearchSatelliteAssemblies)" ShowLogo="$(ShowLogo)" ShowStatistics="$(ShowStatistics)" StringEncryption="$(StringEncryption)" SuppressReflection="$(SuppressReflection)" UnicodeNormalization="$(UnicodeNormalization)" ValueEncryption="$(ValueEncryption)" VerboseLevel="$(VerboseLevel)" VirtualFunctions="$(VirtualFunctions)" />
+  </Target>
+</Project>
